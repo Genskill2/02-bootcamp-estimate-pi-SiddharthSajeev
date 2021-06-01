@@ -25,3 +25,5 @@ def monte_carlo(n):
     pi=4*(incircle/(outcircle+incircle))
     return pi
  
+ 
+
