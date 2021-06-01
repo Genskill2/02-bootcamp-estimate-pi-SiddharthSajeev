@@ -6,22 +6,11 @@ def wallis(n):
  for n in range(o):
   x=random.random()
   y=random.random()
-  if(x>y):
-       if(y>=((1-x**2)**0.5)):
-        incircle+=1
-       else:
-        outcircle+=1
-  elif(y>x):
-       if(y>=((1-x**2)**0.5)):
-        incircle+=1
-       else:
-        outcircle+=1
-  elif(x==y): 
-       if(x>(1/(2**0.5))):
-        outcircle+=1
-       else:
-        incircle+=1
- pi=16*(incircle/(outcircle+incircle))
+  if (((x**2+y**2)**0.5)>1) :
+    outcircle+=1
+  else:
+    incircle+=1
+ pi=4*(incircle/(outcircle+incircle))
  return pi
 
 m=input()
