@@ -7,8 +7,8 @@ def wallis(n):
       w=4*z*z
       pi*=w/(w-1)
       z+=1
- return 2*pi
-
+ print(2*pi)
+wallis(5000)
 
 def monte_carlo(n):
  import random
@@ -23,11 +23,6 @@ def monte_carlo(n):
   else:
     incircle+=1
  pi=4*(incircle/(outcircle+incircle))
- return pi
-
-m=input()
-p=wallis(m)
-print("The estimated value of pi using wallis method is",p)
-q=monte_carlo(m)
-print("The estimated value of pi using wallis method is",q)
+ print(pi)
+monte_carlo(5000)
 
