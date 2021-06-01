@@ -8,7 +8,7 @@ def wallis(n):
       pi*=w/(w-1)
       z+=1
  print(2*pi)
-wallis(5000)
+ return pi
 
 def monte_carlo(n):
  import random
@@ -24,5 +24,9 @@ def monte_carlo(n):
     incircle+=1
  pi=4*(incircle/(outcircle+incircle))
  print(pi)
-monte_carlo(5000)
+ return pi
 
+m=200
+input(int(m))
+wallis(m)
+monte_carlo(m)
