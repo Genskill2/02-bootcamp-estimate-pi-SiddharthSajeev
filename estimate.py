@@ -2,7 +2,8 @@ def wallis(n):
  import random
  incircle=0
  outcircle=0
- for n in range(n):
+ o=int(n)
+ for n in range(o):
   x=random.random()
   y=random.random()
   if(x>y):
@@ -21,5 +22,8 @@ def wallis(n):
        else:
         incircle+=1
  pi=16*(incircle/(outcircle+incircle))
- print("The estimated value of pi is",pi);
-wallis(50000);
+ return pi
+
+m=input()
+p=wallis(m)
+print("The estimated value of pi is",p)
