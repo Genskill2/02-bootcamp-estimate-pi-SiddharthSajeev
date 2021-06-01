@@ -1,14 +1,15 @@
+
 def wallis(n):
  o=int(n)
  z=1
  pi=1
  for n in range(o):
-      w=0
-      w=4*z*z
-      pi*=w/(w-1)
-      z+=1
- print(2*pi)
- return pi
+     w=0
+     w=4*z*z
+     pi*=w/(w-1)
+     z+=1
+ return 2*pi 
+ 
 
 def monte_carlo(n):
  import random
@@ -23,10 +24,11 @@ def monte_carlo(n):
   else:
     incircle+=1
  pi=4*(incircle/(outcircle+incircle))
- print(pi)
  return pi
+ 
 
-m=200
-input(int(m))
-wallis(m)
-monte_carlo(m)
+a=int(input("Enter number of iterations"))
+p=wallis(a)
+print(p)
+q=monte_carlo(a)
+print(q)
