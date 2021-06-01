@@ -1,7 +1,5 @@
-import random
-n=int(input("Enter numer of iterations"));
-def wallis():
- global n
+def wallis(n):
+ import random
  incircle=0
  outcircle=0
  for n in range(n):
@@ -24,4 +22,4 @@ def wallis():
         incircle+=1
  pi=16*(incircle/(outcircle+incircle))
  print("The estimated value of pi is",pi);
-wallis();
+wallis(50000);
